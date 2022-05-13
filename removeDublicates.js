@@ -26,6 +26,11 @@ function uniqueWithObject (array) {
     return result;
 }
 
+
+export function createArrayWithoutDuplicates(arr1, arr2){ 
+    return [...new Set(arr1), ...new Set(arr2)];
+ }
+
 const array = [4, 5, 4, 6, 5, 8, 10];
 
 console.log(uniqueWithSet(array).toString());
